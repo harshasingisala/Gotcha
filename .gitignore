@@ -11,6 +11,7 @@ backend/**/*.pyc
 backend/.venv/
 supabase/.temp/
 .env
+render.env
 backend/.env
 frontend/.env
 frontend/landing-shot*.png
