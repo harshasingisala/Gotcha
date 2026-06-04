@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: campus-lost-api
+    name: gotcha
     runtime: python
     rootDir: backend
     buildCommand: pip install -r requirements.txt
@@ -22,4 +22,10 @@ services:
       - key: SUPABASE_JWT_SECRET
         sync: false
       - key: SUPABASE_JWKS
+        sync: false
+      - key: VAPID_PUBLIC_KEY
+        sync: false
+      - key: VAPID_PRIVATE_KEY
+        sync: false
+      - key: VAPID_CLAIMS_EMAIL
         sync: false
